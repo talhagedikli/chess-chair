@@ -1,0 +1,79 @@
+// 2022-01-05 14:21:13
+#event properties (no comments/etc. here are saved)
+parent_index = objParChessman;
+sprite_index = sprPawn;
+uses_physics = false;
+
+#event create
+// Inherit the parent event
+event_inherited();
+
+pos = vec2(2, 3);
+
+t1 = method(self, function()
+{
+
+	show(id);
+	var in = Control.In.p1;
+	if (in.keyRightPressed)
+	{
+		pos.x = pos.x + 1;
+		updateRealPosition(pos);
+	}	
+})
+show(t1)
+t1();
+
+
+
+updateRealPosition(pos);
+
+__rIdle = function()
+{
+	var in = Control.In.p1;
+	if (in.keyRightPressed)
+	{
+		pos.x = pos.x + 1;
+		updateRealPosition(pos);
+	}
+}
+
+__rMove = function()
+{
+	
+}
+st.add("idle",
+{
+	enter: function()
+	{
+		
+	},
+	step: function()
+	{
+		var in = Control.In.p1;
+		if (in.keyRightPressed)
+		{
+			pos.x = pos.x + 1;
+			updateRealPosition(pos);
+			__clampPosition();
+		}		
+	}
+})
+
+#event step
+// Inherit the parent event
+event_inherited();
+var pp = objTestTable.getRealPosition(vec2(0, 0));
+
+var mp = vec2(mouse_x, mouse_y);
+//if (point_in_rectangle(mp.x, mp.y, pp.x, pp.y, pp.x + GRID_WIDTH, pp.y + GRID_HEIGHT))
+//{
+//	show("mx: " , mouse_x, " my: ", mouse_y, " ppx: " , pp.x, " ppy: ", pp.y);
+//}
+//log("mx: " , mouse_x, " my: ", mouse_y, " ppx: " , pp.x, " ppy: ", pp.y);
+
+
+#event draw
+draw_self();
+var pp = objTestTable.getRealPosition(vec2(0, 0));
+draw_rectangle_color(pp.x, pp.y, pp.x + GRID_WIDTH, pp.y + GRID_HEIGHT, c_blue, c_green, c_blue, c_green, false);

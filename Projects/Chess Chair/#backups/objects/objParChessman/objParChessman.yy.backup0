@@ -1,0 +1,64 @@
+// 2022-01-05 14:03:38
+#event properties (no comments/etc. here are saved)
+parent_index = -1;
+uses_physics = false;
+
+#event create
+states		= {
+	idle: "idle",
+	move: "move"
+}
+state		= states.idle;
+pos			= vec2(0);
+// Methods
+destroy = function()
+{
+	instance_destroy(self.id);	
+}
+__clampPosition = function()
+{
+	pos.x = clamp(pos.x, 0, 6);	
+	pos.y = clamp(pos.y, 0, 6);	
+}
+getRealPosition = function(_vec)
+{
+	return vec2(objTestTable.bbox_top + _vec.y * GRID_HEIGHT, objTestTable.bbox_left + _vec.x * GRID_WIDTH);
+}
+updateRealPosition = function(_pos)
+{
+	var pp = objTestTable.getRealPosition(_pos);
+	x	= pp.x;
+	y	= pp.y;	
+}
+// States
+stateChange = function(_state)
+{
+	state = _state;
+}
+__rIdle = function()
+{
+	
+}
+__rMove = function()
+{
+	
+}
+
+st = new SnowState("idle");
+
+
+
+
+#event step
+// switch (state)
+// {
+// 	case states.idle:
+// 		__rIdle();
+// 		__clampPosition();
+// 	break;
+	
+// 	case states.move:
+// 		__rMove();
+// 	break;
+// }
+st.step();

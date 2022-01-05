@@ -1,0 +1,3 @@
+- tilemap_get() and tilemap_set()
+- understand tiles
+- understand surfaces
