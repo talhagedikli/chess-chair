@@ -1,11 +1,11 @@
 #macro PARTICLES global.__particles
 
 global.__particles = [];
-
 function Particle(_system) constructor
 {
 	system	= _system;
-	type	= part_type_create();
+	//type	= part_type_create();
+	type	= 0;
 	time	= 0;
 	t		= new Timer(0);
 	array_push(PARTICLES, self);
@@ -108,7 +108,7 @@ function Particle(_system) constructor
 		return self;
 	}
 	
-	/// @func Alpha1(a1)
+	/// @param {real} a1
 	static Alpha1 = function(a1)
 	{
 		part_type_alpha1(type, a1);

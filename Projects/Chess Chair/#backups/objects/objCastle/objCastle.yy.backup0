@@ -1,0 +1,63 @@
+// 2022-01-24 12:23:57
+#event properties (no comments/etc. here are saved)
+uses_physics = false;
+sprite_index = sprPawn;
+
+#event create
+// Inherit the parent event
+pos = new Vector2(3, 4);
+
+updateRealPosition(pos);
+
+idleState = new State();
+idleState.start = function()
+{
+	show("entered idle state");
+}
+
+idleState.run = function()
+{
+	var in = Control.In.p1;
+	if (in.keyRightPressed)
+	{
+		pos.x = pos.x + 1;
+		clampPosition();
+		updateRealPosition(pos);
+		
+	}
+	else if (in.keyLeftPressed)
+	{
+		pos.x = pos.x - 1;
+		clampPosition();
+		updateRealPosition(pos);
+	}
+	
+	if (in.keyDownPressed)
+	{
+		pos.y = pos.y + 1;
+		clampPosition();
+		updateRealPosition(pos);
+	}
+	else if (in.keyUpPressed)
+	{
+		pos.y = pos.y - 1;
+		clampPosition();
+		updateRealPosition(pos);
+	}	
+}
+
+init_state(idleState);
+
+#event step
+run_state();
+//if (point_in_rectangle(mp.x, mp.y, pp.x, pp.y, pp.x + GRID_WIDTH, pp.y + GRID_HEIGHT))
+//{
+//	show("mx: " , mouse_x, " my: ", mouse_y, " ppx: " , pp.x, " ppy: ", pp.y);
+//}
+//log("mx: " , mouse_x, " my: ", mouse_y, " ppx: " , pp.x, " ppy: ", pp.y);
+
+
+#event draw
+draw_self();
+var pp = objTestTable.getRealPosition(new Vector2(0, 0));
+draw_rectangle_color(pp.x, pp.y, pp.x + GRID_WIDTH, pp.y + GRID_HEIGHT, c_blue, c_green, c_blue, c_green, false);

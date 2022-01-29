@@ -15,13 +15,12 @@ gui.SetSize(width, height);
 alarm[0] = 1;
 surView = -1;
 
-
 //shake
 shake			= false;
 shakeTime		= 0;
 shakeMagnitude	= 0;
 shakeFade		= 0;
-__ApplyScreenShake = function () 
+__ApplyScreenShake = function() 
 {
 	if (shake)
 	{
@@ -51,14 +50,45 @@ __ApplyScreenShake = function ()
 }
 Shake = function(_time, _magnitude, _fade = _magnitude)
 {
-	/// @func Shake(time, magnitude, *fade)
-	self.shakeTime		= _time;
-	self.shakeMagnitude = _magnitude;
-	self.shakeFade		= _fade;
-	self.shake			= true;
+	shakeTime		??= _time;
+	shakeMagnitude	??= _magnitude;
+	shakeFade		??= _fade;
+	shake			= true;
 }
 Follow = function(_id = self.id)
 {
-	/// @func Follow(id)
 	self.following = _id;
 }
+
+fsm			= new StateMachine();
+normalState = new State("normal");
+normalState.start = function()
+{
+	
+}
+normalState.step_end = function()
+{
+	var xTo, yTo;
+	if (instance_exists(following))
+	{
+		xTo = round(following.x) - (width / 2);
+		yTo = round(following.y) - (height / 2);
+	}
+	else
+	{
+		xTo = x;
+		yTo = y;
+	}
+	x = lerp(x, xTo, 0.1);
+	y = lerp(y, yTo, 0.1);
+	self.__ApplyScreenShake();
+	camera.SetPos(floor(x), floor(y));
+	if (!surface_exists(surView)) {
+	    surView = surface_create(width + 1, height + 1);
+	}
+	view_surface_id[0] = surView;	
+}
+
+fsm.Add(normalState);
+
+fsm.Init("normal");

@@ -1,10 +1,14 @@
-#macro vec2 new Vector2
-#macro VECTOR2_ZERO		vec2(0)
-#macro VECTOR2_RANDOM	vec2(lengthdir_x(1, random(360), lengthdir_y(1, random(360))
-function Vector2(_x = undefined, _y = _x) constructor
+//#macro new Vector2 new Vector2
+//#macro VECTOR2_ZERO		new Vector2(0)
+//#macro VECTOR2_RANDOM	new Vector2(lengthdir_x(1, random(360), lengthdir_y(1, random(360))
+
+
+function Vector2(_x = 0, _y = _x) constructor
 {
 	self.x	= _x;
 	self.y	= _y;
+	///@param {real} _x
+	///@param {real} _y
 	static Set = function(_x, _y) 
 	{
 		x = _x;
@@ -47,14 +51,14 @@ function Vector2(_x = undefined, _y = _x) constructor
 		Multiply(_scalar);
 	}
 	static LimitMagnitude = function(_limit) {
-		if (length() > _limit) {
+		if (Length() > _limit) {
 			SetMagnitude(_limit);
 		}
 	}
 	static Copy = function(_vector2)
 	{
-		x = _vector2.x;
-		y = _vector2.y;
+		x = real(_vector2.x);
+		y = real(_vector2.y);
 	}
 	
 	static Absv = function()
@@ -80,7 +84,7 @@ function Vector2(_x = undefined, _y = _x) constructor
 	static Normalized = function()
 	{
 	    var _vector = self;
-	    _vector.normalize();
+	    _vector.Normalize();
 	    return _vector;
 	}
 
@@ -122,7 +126,7 @@ function Vector2(_x = undefined, _y = _x) constructor
 	    var _check = instanceof(vector2);
 	    if (is_string(_check))
 	    {
-	        return (radians) ? arctan2(cross(vector2), dot(vector2)) : darctan2(cross(vector2), dot(vector2));
+	        return (radians) ? arctan2(Cross(vector2), Dot(vector2)) : darctan2(Cross(vector2), Dot(vector2));
 	    }
 	    else
 	    {
@@ -189,7 +193,7 @@ function Vector2(_x = undefined, _y = _x) constructor
 	/// @desc Returns the vector projected onto the given vector.
 	static Project = function(vector2)
 	{
-	    return (vector2 * (dot(vector2) / vector2.length_squared()));
+	    return (vector2 * (Dot(vector2) / vector2.length_squared()));
 	}
 
 	/// @func snapped()
@@ -205,7 +209,7 @@ function Vector2(_x = undefined, _y = _x) constructor
 	/// @desc Returns the vector with a maximum length by limiting its length to length.
 	static Clamped = function(max_length)
 	{
-	    var _length = length();
+	    var _length = Length();
 	    var _vector = self;
 	    if (_length > 0 and max_length < _length)
 	    {
@@ -227,7 +231,7 @@ function Vector2(_x = undefined, _y = _x) constructor
 	    var _vector = self;
 	    var _epsilon = 0.0001;
 	    var _vector_delta = new Vector2(vector2.x - _vector.x, vector2.y - _vector.y);
-	    var _length = _vector_delta.length();
+	    var _length = _vector_delta.Length();
 
 	    if (_length <= delta or _length < _epsilon)
 	    {
@@ -261,11 +265,11 @@ function Vector2(_x = undefined, _y = _x) constructor
 	{
 	    return ("{ " + string(x) + ", " + string(y) + " }");
 	}
-	
-	
 }
 
-/// @func Vector3(x, y, z)
+/// @param {real} _x
+/// @param {real} _y
+/// @param {real} _z
 function Vector3(_x, _y, _z) constructor {
 	x = _x;
 	y = _y;

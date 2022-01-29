@@ -11,6 +11,7 @@ if (active)
 		keyUp				= keyboard_check(vk_up);
 		
 		keyJump 			= keyboard_check(vk_space);	
+		keyJumpPressed 		= keyboard_check_pressed(vk_space);	
 		keyDashPressed		= keyboard_check_pressed(ord("Z"));
 		keyRun				= keyboard_check(ord("B"));
 
@@ -20,7 +21,4 @@ if (active)
 		keyUpPressed		= keyboard_check_pressed(vk_up);
 	}
 } 
-else 
-{
 
-}

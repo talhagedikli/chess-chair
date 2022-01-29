@@ -15,6 +15,8 @@ p1 = {
 	keyUp				: 0,
 	
 	keyJump 			: 0,
+	keyJumpPressed 		: 0,
+
 	keyDashPressed		: 0,
 	keyRun				: 0,
 	

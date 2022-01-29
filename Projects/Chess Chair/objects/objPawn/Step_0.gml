@@ -5,3 +5,4 @@ event_inherited();
 //	show("mx: " , mouse_x, " my: ", mouse_y, " ppx: " , pp.x, " ppy: ", pp.y);
 //}
 //log("mx: " , mouse_x, " my: ", mouse_y, " ppx: " , pp.x, " ppy: ", pp.y);
+fsm.Step();

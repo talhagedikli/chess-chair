@@ -40,7 +40,6 @@ function array_safe(_array, _value)
 		if (_array[i] == _value)
 		{
 			return false;
-			break;
 		}
 		i++;
 	}
@@ -54,7 +53,6 @@ function ds_list_safe(_list, _value)
 		if (_list[| i] == _value)
 		{
 			return false;
-			break;
 		}
 		i++;
 	}

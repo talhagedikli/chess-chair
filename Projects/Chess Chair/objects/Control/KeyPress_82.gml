@@ -1,1 +1,1 @@
-GameRestart();
+self.GameRestart();

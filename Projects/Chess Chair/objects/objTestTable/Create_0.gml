@@ -10,15 +10,13 @@ enum rows {
 	g,
 	h
 }
-
 tablePos = {};
-
 var p = 0;
 var i = 0; repeat(8)
 {
 	var j = 0; repeat(8)
 	{
-		tablePos[$ string(p)] = vec2(row[i], line[j]);
+		tablePos[$ string(p)] = new Vector2(row[i], line[j]);
 		p++;
 		j++;
 	}
@@ -26,5 +24,5 @@ var i = 0; repeat(8)
 }
 getRealPosition = function(_vec)
 {
-	return vec2(bbox_left + _vec.x * GRID_WIDTH, bbox_top + _vec.y * GRID_HEIGHT);
+	return new Vector2(bbox_left + _vec.x * GRID_WIDTH, bbox_top + _vec.y * GRID_HEIGHT);
 }

@@ -1,17 +1,22 @@
-#macro TIMERS	global.__timers
-#macro timer	new Timer
-global.__timers = [];
+function timers()
+{
+	static data = [];
+	return data;
+}
 
 function run_all_timers()
 {
-	var _timers_len = array_length(TIMERS);
-	
-	for (var i = 0; i < _timers_len; ++i) 
+	var _l = array_length(timers());
+	for (var i = 0; i < _l; ++i) 
 	{
-	    TIMERS[i].Run();
+		var a = timers()[i];
+		a.Run();
 	}	
 }
 
+/// @param {real} _duration		Duration
+/// @param {bool} _loop			Loop
+/// @param {bool} _autostart	Auto Start
 function Timer(_duration, _loop = false, _autostart = false) constructor
 { // For basic timer
 	time		= 0;
@@ -21,12 +26,12 @@ function Timer(_duration, _loop = false, _autostart = false) constructor
 	active		= _autostart;
 	loop		= _loop;
 	done		= false;
-	array_push(TIMERS, self);
-
-	static Start = function(_duration = duration, _loop = loop)
+	array_push(timers(), self);
+	
+	static Start = function()
 	{
-		duration	= _duration;
-		loop		= _loop;
+		//duration	= _duration;
+		//loop		= _loop;
 		timeLeft	= duration - time;
 		done	= false;
 		active	= true;
@@ -46,29 +51,31 @@ function Timer(_duration, _loop = false, _autostart = false) constructor
 		}
 		return self;
 	}
-	static SetDuration = function(_duration)
+	static SetDuration = function(_duration = duration)
 	{
 		duration	= _duration;
 		return self;
 	}
-	static SetLoop = function(_loop)
+	static SetLoop = function(_loop = loop)
 	{
 		loop = _loop;
 	}
+	/// @param {function} _func Function to run on timeout
 	static OnTimeout = function(_func)
 	{
 		if (done)
 		{
 			_func();
 			Stop();
-			if (loop) self.Reset();
+			if (loop) Reset();
 		}
 		return self;
 	}
-	static Reset = function(_duration = duration)
+	/// @param {real} _duration
+	static Reset = function()
 	{
 		time		= 0;
-		duration	= _duration;
+		//duration	= _duration;
 		done		= false;
 		active		= true;
 		return self;
@@ -81,6 +88,7 @@ function Timer(_duration, _loop = false, _autostart = false) constructor
 		done	= false;
 		return self;
 	}
+	/// @param {bool} _active Set active
 	static SetActive = function(_active)
 	{
 		active = _active;
@@ -94,9 +102,10 @@ function Timer(_duration, _loop = false, _autostart = false) constructor
 	{
 		return self.time;
 	}
+	/// @param {real} _time Time to seek
 	static SeekTime = function(_time)
 	{
-		return time == _time ? true : false;
+		return self.time == _time ? true : false;
 	}
 	static GetTimeLeft = function()
 	{

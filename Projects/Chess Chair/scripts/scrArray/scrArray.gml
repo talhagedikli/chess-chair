@@ -19,18 +19,6 @@ function Array() constructor
 	{
 		return self;
 	}
-	static Count = function(_el)
-	{
-		var num = 0;
-		foreach(arr, function(val, ind)
-		{
-			if (val == _el)
-			{
-				num++;
-			}
-		})
-		return num;
-	}
 	static Index = function(_ind)
 	{
 		return self.arr[_ind];

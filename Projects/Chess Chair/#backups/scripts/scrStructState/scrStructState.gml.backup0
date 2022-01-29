@@ -1,0 +1,42 @@
+// 2022-01-25 01:06:38
+function State(_name = "") constructor 
+{
+	owner = other.id;
+	name = _name;
+	enter = function() {};
+	step_begin = function() {};
+	step = function() {};
+	step_after = function() {};
+	leave = function() {};
+	draw = function() {};
+}
+
+function state_step() 
+{
+	__active_state.step_begin();
+	__active_state.step();
+	__active_state.step_after();
+}
+
+function state_change(_state) 
+{
+	__active_state.leave();
+	__active_state = _state;
+	__active_state.enter();
+}
+
+function state_init(_state) 
+{
+	__active_state = _state;
+	__active_state.enter();
+}
+
+function state_draw() 
+{
+	__active_state.draw();	
+}
+
+function state_is(_state_name = "")
+{
+	return __active_state.name == _state_name;
+}

@@ -1,15 +1,16 @@
-#macro TWEENS	global.__tweens
-#macro tween	new Tween
-global.__tweens = [];
-
+function tweens()
+{
+	static data = [];
+	return data;
+}
 
 function run_all_tweens()
 {
-	var _l = array_length(TWEENS);
-	
+	var _l = array_length(tweens());
 	for (var i = 0; i < _l; ++i) 
 	{
-	    TWEENS[i].Run();
+		var a = tweens()[i];
+		a.Run();
 	}	
 }
 
@@ -64,7 +65,8 @@ function Tween(_type = TweenType.Linear, _start = 0, _end = 0, _dur = 0, _autost
 	// Not used yet
 	reverse 	= false;
 	
-	array_push(TWEENS, self);
+	array_push(tweens(), self);
+
 
 	static Start = function(_start = y1, _end = y2, _duration = duration, _loop = false)
 	{
@@ -127,6 +129,7 @@ function Tween(_type = TweenType.Linear, _start = 0, _end = 0, _dur = 0, _autost
 	{
 		return active;
 	}
+	/// @param {bool} _active
 	static SetActive = function(_active)
 	{
 		active = _active;
@@ -139,9 +142,10 @@ function Tween(_type = TweenType.Linear, _start = 0, _end = 0, _dur = 0, _autost
 	{
 		// Rate is a value between 0 and 1
 		// 0 means just started 1 means ended
-		return _rate >= rate ? true : false;
+		return _rate >= x ? true : false;
 	}
-	static OnTimeout = function(_func = function() {})
+	/// @param {function} _func
+	static OnTimeout = function(_func)
 	{
 		if (done)
 		{

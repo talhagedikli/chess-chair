@@ -27,14 +27,14 @@ function check_collisions_classic(_motion) {
 
 }
 
-
-function check_collisions_pixel_perfect(_object = objBlock, _motion, _applyspd = true) { /// @description the pixel perfect collisions
+///@param {object} _object
+function check_collisions_pixel_perfect(_object = noone, _motion, _applyspd = true) { /// @description the pixel perfect collisions
 
 	//I think this is better calculation for single mask
-	var sprite_bbox_top		= sprite_get_bbox_top(sprite_index)		- sprite_get_yoffset(sprite_index);
-	var sprite_bbox_bottom	= sprite_get_bbox_bottom(sprite_index)	- sprite_get_yoffset(sprite_index);
-	var sprite_bbox_right	= sprite_get_bbox_right(sprite_index)	- sprite_get_xoffset(sprite_index);
-	var sprite_bbox_left	= sprite_get_bbox_left(sprite_index)	- sprite_get_xoffset(sprite_index);
+	var sprite_bbox_top		= sprite_get_bbox_top(self.sprite_index)		- sprite_get_yoffset(self.sprite_index);
+	var sprite_bbox_bottom	= sprite_get_bbox_bottom(self.sprite_index)	- sprite_get_yoffset(self.sprite_index);
+	var sprite_bbox_right	= sprite_get_bbox_right(self.sprite_index)	- sprite_get_xoffset(self.sprite_index);
+	var sprite_bbox_left	= sprite_get_bbox_left(self.sprite_index)	- sprite_get_xoffset(self.sprite_index);
 
 	//Applying horizontal speed if there is no collision with block
 	if (_applyspd) x += _motion.x;
@@ -69,13 +69,13 @@ function check_collisions_pixel_perfect(_object = objBlock, _motion, _applyspd =
 	}
 }
 
-function check_collisions_pixel_perfect_topdown(_object = objBlock, _motion, _dir) { /// @description the pixel perfect collisions
+function check_collisions_pixel_perfect_topdown(_object = noone, _motion, _dir) { /// @description the pixel perfect collisions
 
 	//I think this is better calculation for single mask
-	var sprite_bbox_top		= sprite_get_bbox_top(sprite_index)		- sprite_get_yoffset(sprite_index);
-	var sprite_bbox_bottom	= sprite_get_bbox_bottom(sprite_index)	- sprite_get_yoffset(sprite_index);
-	var sprite_bbox_right	= sprite_get_bbox_right(sprite_index)	- sprite_get_xoffset(sprite_index);
-	var sprite_bbox_left	= sprite_get_bbox_left(sprite_index)	- sprite_get_xoffset(sprite_index);
+	var sprite_bbox_top		= sprite_get_bbox_top(self.sprite_index)		- sprite_get_yoffset(self.sprite_index);
+	var sprite_bbox_bottom	= sprite_get_bbox_bottom(self.sprite_index)	- sprite_get_yoffset(self.sprite_index);
+	var sprite_bbox_right	= sprite_get_bbox_right(self.sprite_index)	- sprite_get_xoffset(self.sprite_index);
+	var sprite_bbox_left	= sprite_get_bbox_left(self.sprite_index)	- sprite_get_xoffset(self.sprite_index);
 
 	// Applying horizontal speed if there is no collision with block
 	// x += lengthdir_x(_motion.x, _dir);
@@ -110,19 +110,19 @@ function check_collisions_pixel_perfect_topdown(_object = objBlock, _motion, _di
 	}
 }
 
-function check_collisions_tile_perfect(_motion) { /// @description the pixel perfect collisions
+function check_collisions_tile_perfect(_motion, _tile) { /// @description the pixel perfect collisions
 
 	//I think this is better calculation for single mask
-	var sprite_bbox_top		= sprite_get_bbox_top(sprite_index)		- sprite_get_yoffset(sprite_index);
-	var sprite_bbox_bottom	= sprite_get_bbox_bottom(sprite_index)	- sprite_get_yoffset(sprite_index);
-	var sprite_bbox_right	= sprite_get_bbox_right(sprite_index)	- sprite_get_xoffset(sprite_index);
-	var sprite_bbox_left	= sprite_get_bbox_left(sprite_index)	- sprite_get_xoffset(sprite_index);
+	var sprite_bbox_top		= sprite_get_bbox_top(self.sprite_index)		- sprite_get_yoffset(self.sprite_index);
+	var sprite_bbox_bottom	= sprite_get_bbox_bottom(self.sprite_index)	- sprite_get_yoffset(self.sprite_index);
+	var sprite_bbox_right	= sprite_get_bbox_right(self.sprite_index)	- sprite_get_xoffset(self.sprite_index);
+	var sprite_bbox_left	= sprite_get_bbox_left(self.sprite_index)	- sprite_get_xoffset(self.sprite_index);
 	
 	//Applying horizontal speed if there is no collision with block
 	x += _motion.x;
 	//Horizontal collisions
 	if tile_meeting(x + sign(_motion.x), y, "CollidibleTile") {
-		var wall = tilemap_get_at_pixel(tile, x + sign(_motion.x), y);
+		var wall = tilemap_get_at_pixel(_tile, x + sign(_motion.x), y);
 		if (_motion.x > 0)
 		{ //right
 			x = (wall.bbox_left - 1) - sprite_bbox_right;
@@ -138,7 +138,7 @@ function check_collisions_tile_perfect(_motion) { /// @description the pixel per
 	y += _motion.y;
 	//Vertical collisions
 	if tile_meeting(x, y + sign(_motion.y), "CollidibleTile") {
-		var wall = tilemap_get_at_pixel(tile, x, y + sign(_motion.y));
+		var wall = tilemap_get_at_pixel(_tile, x, y + sign(_motion.y));
 		if (_motion.y > 0)
 		{ //down
 			y = (wall.bbox_top - 1) - sprite_bbox_bottom;
@@ -185,35 +185,34 @@ var _x1 = tilemap_get_cell_x_at_pixel(_tm, bbox_left + (_x - x), y),
 ///@param x
 ///@param y
 ///@param layer
-function tile_meeting_precise(argument0, argument1, argument2) {
-	var _layer = argument2,
-	    _tm = layer_tilemap_get_id(_layer),
-	    _checker = obj_precise_tile_checker;
-	if(!instance_exists(_checker)) instance_create_depth(0,0,0,_checker);  
+//function tile_meeting_precise(argument0, argument1, argument2, _checker = noone) {
+//	var _layer = argument2,
+//	    _tm = layer_tilemap_get_id(_layer),
+//	if(!instance_exists(_checker)) instance_create_depth(0,0,0,_checker);  
 
  
-	var _x1 = tilemap_get_cell_x_at_pixel(_tm, bbox_left + (argument0 - x), y),
-	    _y1 = tilemap_get_cell_y_at_pixel(_tm, x, bbox_top + (argument1 - y)),
-	    _x2 = tilemap_get_cell_x_at_pixel(_tm, bbox_right + (argument0 - x), y),
-	    _y2 = tilemap_get_cell_y_at_pixel(_tm, x, bbox_bottom + (argument1 - y));
+//	var _x1 = tilemap_get_cell_x_at_pixel(_tm, bbox_left + (argument0 - x), y),
+//	    _y1 = tilemap_get_cell_y_at_pixel(_tm, x, bbox_top + (argument1 - y)),
+//	    _x2 = tilemap_get_cell_x_at_pixel(_tm, bbox_right + (argument0 - x), y),
+//	    _y2 = tilemap_get_cell_y_at_pixel(_tm, x, bbox_bottom + (argument1 - y));
  
-	for(var _x = _x1; _x <= _x2; _x++){
-	  for(var _y = _y1; _y <= _y2; _y++){
-	var _tile = tile_get_index(tilemap_get(_tm, _x, _y));
-	if(_tile){
-	  if(_tile == 1) return true;
+//	for(var _x = _x1; _x <= _x2; _x++){
+//	  for(var _y = _y1; _y <= _y2; _y++){
+//	var _tile = tile_get_index(tilemap_get(_tm, _x, _y));
+//	if(_tile){
+//	  if(_tile == 1) return true;
      
-	  _checker.x = _x * tilemap_get_tile_width(_tm);
-	  _checker.y = _y * tilemap_get_tile_height(_tm);
-	  _checker.image_index = _tile;
+//	  _checker.x = _x * tilemap_get_tile_width(_tm);
+//	  _checker.y = _y * tilemap_get_tile_height(_tm);
+//	  _checker.image_index = _tile;
      
-	  if(place_meeting(argument0,argument1,_checker))
-	    return true;
-	}
-	}
-	}
+//	  if(place_meeting(argument0,argument1,_checker))
+//	    return true;
+//	}
+//	}
+//	}
  
-	return false;
+//	return false;
 
 
-}
+//}

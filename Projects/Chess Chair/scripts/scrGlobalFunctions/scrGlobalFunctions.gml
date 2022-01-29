@@ -37,7 +37,7 @@ function concat()
 }
  
 //Show debug message enhanced with string concatenation
-function debug_message()
+function log()
 {
     var _string = "";
     for(var i = 0; i < argument_count; i++) _string += string(argument[i]);
@@ -45,7 +45,8 @@ function debug_message()
 }
 
 //Show debug message enhanced with string concatenation
-function screen_message()
+//function screen_message()
+function show()
 {
     var _string = "";
     for(var i = 0; i < argument_count; i++) _string += string(argument[i]);
@@ -53,6 +54,9 @@ function screen_message()
 }
 
 //Move value towards another value by a given amount
+///@param {real} _a
+///@param {real} _b
+///@param {real} _amount
 function approach(_a, _b, _amount) 
 {
     if (_a < _b)

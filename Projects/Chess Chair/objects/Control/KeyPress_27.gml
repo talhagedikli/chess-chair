@@ -1,2 +1,2 @@
 /// @description 
-GameEnd();
+self.GameEnd();

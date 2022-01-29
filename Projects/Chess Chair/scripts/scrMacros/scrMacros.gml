@@ -2,13 +2,9 @@
 #macro FLIP_COIN		choose(true, false)
 #macro EPSILON			0.0001
 
-#macro log				debug_message
-#macro show		 		screen_message
+//#macro log				debug_message
+//#macro show		 		screen_message
 #macro here				show("here")
-
-#macro ignore			if (true) { } else
-#macro defer			for (;; {
-#macro after			; break; })	  
 
 //defer {
 //	show("second");
