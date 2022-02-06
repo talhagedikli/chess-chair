@@ -1,4 +1,5 @@
-function array_shuffled(arr)
+///@param {array} arr
+function array_shuffle1(arr)
 {
 	var len = array_length(arr);
 	for (var i = 0; i < len; i++)
@@ -14,6 +15,8 @@ function array_shuffled(arr)
 	return arr;
 }
 
+
+///@param {array} arr
 function array_shuffle(arr)
 {
 	array_sort(arr, function() {
@@ -21,7 +24,8 @@ function array_shuffle(arr)
 	});
 }
 
-function array_reverse(arr)
+///@param {array} arr
+function array_reverse1(arr)
 {
 	var l = array_length(arr);
 	var a = array_create(l);
@@ -32,7 +36,14 @@ function array_reverse(arr)
 	}
 	return a;
 }
+///@param {array} _array
+function array_reverse(_array)
+{
+	return na.slice(_array, 0, na.size(_array), -1);
+}
 
+///@param {array}	_array
+///@param {*}		_value
 function array_safe(_array, _value)
 {
 	var i = 0; repeat(array_length(_array))

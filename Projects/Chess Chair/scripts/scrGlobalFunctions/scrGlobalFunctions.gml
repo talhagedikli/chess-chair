@@ -8,6 +8,16 @@ function surface_free_safe(sur)
 	}
 }
 
+function check_only()
+{
+	if (instance_number(self.object_index) > 1)
+	{
+		show("ERROR: MULTIPLE " + string(object_index) + " OBJECT EXISTS");
+		instance_destroy();
+		exit;
+	}
+}
+
 // Quick set halign and valign
 function draw_set_aling(halign = fa_left, valign = fa_top)
 {
@@ -15,11 +25,23 @@ function draw_set_aling(halign = fa_left, valign = fa_top)
 	draw_set_valign(valign);
 }
 
+function draw_reset_align()
+{
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);	
+}
+
 // Quick set color and alpha
 function draw_set_blend(color = c_white, alpha = 1)
 {
 	draw_set_color(color);
 	draw_set_alpha(alpha);
+}
+
+function draw_reset_blend()
+{
+	draw_set_color(c_white);
+	draw_set_alpha(1);		
 }
 
 // lengthdir_x and lengthdir_y together with vectors
@@ -35,6 +57,7 @@ function concat()
     for(var i = 0; i < argument_count; i++) _string += string(argument[i]);
     return _string;
 }
+
  
 //Show debug message enhanced with string concatenation
 function log()
@@ -75,6 +98,9 @@ function approach(_a, _b, _amount)
 }
  
 // Sine waves a value between two values over a given time. 
+///@param {real} _from
+///@param {real} _to
+///@param {real} _duration
 function wave(_from, _to, _duration, _offset = 0) 
 {
     var a4 = (_to - _from) * 0.5;
@@ -82,6 +108,9 @@ function wave(_from, _to, _duration, _offset = 0)
 }
  
 //Wraps a value between a minimum and a given wrap point
+///@param {real} _value
+///@param {real} _minimum
+///@param {real} _wrapAt
 function wrap(_value, _minimum, _wrapAt) 
 {
  
@@ -89,6 +118,9 @@ function wrap(_value, _minimum, _wrapAt)
     if ( _mod < 0 ) return _mod + _wrapAt else return _mod + _minimum;
 }
 
+///@param {real} value
+///@param {real} min
+///@param {real} max
 function normalize(value, min, max)
 {
 	var normalized = (value - min) / (max - min);
@@ -108,6 +140,7 @@ function remap(value, min1, max1, min2, max2)
 }
 
 /// @description
+///@param {real} _percent
 function chance(_percent)
 {
 	// Returns true or false depending on RNG

@@ -1,137 +1,148 @@
-#macro view				view_camera[0]
-#macro gui				global.__gui
-#macro window			global.__window
-#macro display			global.__display
-#macro camera			global.__camera
+#macro DATA_VIEW		__data_view()
+#macro VIEW				view_camera[0]
 
-#macro GRID_WIDTH 32
-#macro GRID_HEIGHT 32
-#macro GAME_RESOLUTION	new Vector2(640, 360)
-#macro GUI_RESOLUTION	new Vector2(1280, 720)
-#macro WINDOW_SCALE		2
 
-//function view_gui()
-//{
-//	static data = 
-//	{
-//		size : new Vector2(camera_get_view_width(view), camera_get_view_height(view)),
-//		position : new Vector2(camera_get_view_x(view), camera_get_view_y(view))
-//	}
-//}
+#macro gui				__GuiInstance()
+#macro window			__WindowInstance()
+#macro display			__DisplayInstance()
+#macro camera			__CameraInstance()
 
-global.__camera = 
+
+
+function __data_view()
 {
-	width : camera_get_view_width(view),
-	height : camera_get_view_height(view),
-	x : camera_get_view_x(view), 
-	y : camera_get_view_y(view),
-	GetPos : function()
+	static data =
 	{
-		return new Vector2(camera_get_view_x(view), camera_get_view_y(view));
-	},
-	GetSize : function()
+		gameResolution:		new Vector2(640, 360),
+		guiResolution:		new Vector2(1280, 720),
+		gridSize:			new Vector2(32),
+		windowScale:		2
+	}
+	return data;
+}
+
+
+function __Camera() constructor
+{
+	static size = function()
 	{
-		return new Vector2(camera_get_view_width(view), camera_get_view_height(view));
-	},
-	SetPos : function(_x = x, _y = y)
+		return new Vector2(camera_get_view_width(VIEW), camera_get_view_height(VIEW));	
+	}
+	
+	static position = function()
 	{
-		camera_set_view_pos(view, _x, _y);
-		x = _x;
-		y = _y;
-	},
-	SetSize : function(_w, _h)
+		return new Vector2(camera_get_view_x(VIEW), camera_get_view_y(VIEW));	
+	}
+	
+	static setPosition = function(_x, _y)
 	{
-		camera_set_view_size(view, _w, _h);
-		width = _w;
-		height = _h;
+		camera_set_view_pos(VIEW, _x, _y);
+	}
+	
+	static setSize = function(_w, _h)
+	{
+		camera_set_view_size(VIEW, _w, _h);
 	}
 }
-global.__gui = 
+
+function __CameraInstance()
 {
-	width : display_get_gui_width(),
-	height : display_get_gui_height(),
-	center : new Vector2(display_get_gui_width() * 0.5, display_get_gui_height() * 0.5),
-	GetCenter : function()
-	{
-		return new Vector2(display_get_gui_width() * 0.5, display_get_gui_height() * 0.5);	
-	},
-	GetSize : function()
-	{
-		return new Vector2(display_get_gui_width(), display_get_gui_height());
-	},
-	SetSize : function(_w = GUI_RESOLUTION.x, _h = GUI_RESOLUTION.y)
-	{
-		display_set_gui_size(_w, _h);
-		width = _w;
-		height = _h;
-		center = new Vector2(width * 0.5, height * 0.5);
-	},
-	ResetSize : function(_w = GAME_RESOLUTION.x, _h = GAME_RESOLUTION.y)
-	{
-		display_set_gui_size(_w, _h);
-		width = _w;
-		height = _h;
-		center = new Vector2(width * 0.5, height * 0.5);
-	},
+	static instance = new __Camera();
+	return instance;
 }
-global.__window = 
+
+function __Gui() constructor
 {
-	fullscreen : false,
-	width : window_get_width(),
-	height: window_get_height(),	
-	center: new Vector2(window_get_width() * .5, window_get_height() * .5),
-	GetCenter : function()
+	static getSize = function()
 	{
-		return new Vector2(window_get_width() * .5, window_get_height() * .5);
-	},
-	GetSize : function()
+		return new Vector2(display_get_gui_width(), display_get_gui_height());	
+	}
+	
+	static getCenter = function()
 	{
-		return new Vector2(window_get_width(), window_get_height());
-	},
-	SetSize : function(w, h, fs)
+		return new Vector2(display_get_gui_width() * 0.5, display_get_gui_height() * 0.5);
+	}
+	
+	static setSize = function(_w, _h)
 	{
-		if ( argument_count > 2 ) { fullscreen ??= argument[2]; }
-		var ww, hh;
-		ww = w;
-		hh = h;
-		
-		if ( fullscreen )
-		{
-			ww = display.width;
-			hh = display.height;
-		}
-		
-		window_set_size(ww,hh);
-		width	= ww;
-		height	= hh;
-		center	= { x : ww*.5, y: hh*.5 };
-		
-		window_set_position(
-			display.center.x - center.x,
-			display.center.y - center.y
-		);		
+		display_set_gui_size(_w, _h);
+	}
+	
+	static resetSize = function()
+	{
+		display_set_gui_size(DATA_VIEW.guiResolution.x, DATA_VIEW.guiResolution.y);
 	}
 }
-global.__display = 
+
+function __GuiInstance()
 {
-	width	: display_get_width(),
-	height	: display_get_height(),
-	center	: { x : display_get_width()*.5, y : display_get_height()*.5 },
-	GetSize : function()
+	static instance = new __Gui();
+	return instance;
+}
+
+function __Display() constructor
+{
+	fullscreen = false;
+	
+	static getSize = function()
 	{
 		return new Vector2(display_get_width(), display_get_height());
-	},
-	GetCenter : function()
+	}
+	
+	static getCenter = function()
 	{
 		return new Vector2(display_get_width()*.5, display_get_height()*.5);
 	}
+	
 }
-function camera_shake(_time, _magnitude, _fade = _magnitude)
+
+function __DisplayInstance()
 {
-	/// @func Shake(time, magnitude, *fade)
-	var co = Control.Cm.id;
-	co.shakeTime		= _time;
-	co.shakeMagnitude	= _magnitude;
-	co.shakeFade		= _fade;
-	co.shake			= true;
+	static instance = new __Display();
+	return instance;
+}
+
+function __Window() constructor
+{
+	fullscreen = false;
+	
+	static getSize = function()
+	{
+		return new Vector2(window_get_width(), window_get_height());
+	}
+	
+	static getCenter = function()
+	{
+		return new Vector2(window_get_width() * .5, window_get_height() * .5);
+	}
+	
+	static setSize = function(_w, _h)
+	{
+		if ( argument_count > 2 ) { fullscreen = argument[2]; }
+		var ww, hh;
+		ww = _w;
+		hh = _h;
+		
+		if ( fullscreen )
+		{
+			var ds = display.getSize();
+			ww = ds.x;
+			hh = ds.y;
+		}
+		
+		window_set_size(ww,hh);
+		var cc = display.getCenter();
+		var dc = display.getCenter();
+		window_set_position(
+			dc.x - cc.x,
+			dc.y - cc.y
+		);	
+	}
+	
+}
+
+function __WindowInstance()
+{
+	static instance = new __Window();
+	return instance;
 }

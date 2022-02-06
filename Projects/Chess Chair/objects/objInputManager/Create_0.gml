@@ -5,25 +5,26 @@ gpInput 	= true;
 active		= true;
 
 // These values will be used in step event for all other objects
-p1 = {
-	horizontalInput		: 0,
-	verticalInput		: 0,
+p1 = 
+{
+	horizontalInput		: false,
+	verticalInput		: false,
 	
-	keyRight			: 0,
-	keyLeft				: 0,
-	keyDown				: 0,
-	keyUp				: 0,
+	keyRight			: false,
+	keyLeft				: false,
+	keyDown				: false,
+	keyUp				: false,
 	
-	keyJump 			: 0,
-	keyJumpPressed 		: 0,
+	keyJump 			: false,
+	keyJumpPressed 		: false,
 
-	keyDashPressed		: 0,
-	keyRun				: 0,
+	keyDashPressed		: false,
+	keyRun				: false,
 	
-	keyRightPressed 	: 0,
-	keyLeftPressed		: 0,
-	keyDownPressed		: 0,
-	keyUpPressed		: 0,	
+	keyRightPressed 	: false,
+	keyLeftPressed		: false,
+	keyDownPressed		: false,
+	keyUpPressed		: false,	
 }
 
 

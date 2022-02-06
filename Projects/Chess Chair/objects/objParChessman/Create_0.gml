@@ -4,21 +4,21 @@ selected	= false;
 
 // Methods
 /// @param {string} _mtoshow
-destroy = function(_mtoshow)
+function destroy(_mtoshow)
 {
 	instance_destroy(self.id);	
 }
-clampPosition = function()
+function clampPosition()
 {
 	pos.x = clamp(pos.x, 0, 7);	
 	pos.y = clamp(pos.y, 0, 7);	
 }
-getRealPosition = function(_vec)
+function getRealPosition(_vec)
 {
-	return new Vector2(objTestTable.bbox_top + _vec.y * GRID_HEIGHT, objTestTable.bbox_left + _vec.x * GRID_WIDTH);
+	return new Vector2(objTestTable.bbox_top + _vec.y * DATA_VIEW.gridSize.y, objTestTable.bbox_left + _vec.x * DATA_VIEW.gridSize.x);
 }
 
-updateRealPosition = function(_pos)
+function updateRealPosition(_pos)
 {
 	var pp = objTestTable.getRealPosition(_pos);
 	x	= pp.x;

@@ -3,7 +3,7 @@ event_inherited();
 
 pos = new Vector2(3, 4);
 
-self.updateRealPosition(pos);
+updateRealPosition(pos);
 
 idleState.enter = function()
 {
@@ -11,7 +11,7 @@ idleState.enter = function()
 }
 idleState.step = function()
 {
-	var in = Control.In.p1;
+	var in = Core.in.p1;
 	if (in.keyRightPressed)
 	{
 		pos.x = pos.x + 1;
@@ -46,7 +46,7 @@ idleState.draw = function()
 {
 	draw_self();
 	var pp = objTestTable.getRealPosition(new Vector2(0, 0));
-	draw_rectangle_color(pp.x, pp.y, pp.x + GRID_WIDTH, pp.y + GRID_HEIGHT, c_blue, c_green, c_blue, c_green, false);	
+	draw_rectangle_color(pp.x, pp.y, pp.x + DATA_VIEW.gridSize.x, pp.y + DATA_VIEW.gridSize.y, c_blue, c_green, c_blue, c_green, false);	
 }
 
 

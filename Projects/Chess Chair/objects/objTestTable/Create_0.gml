@@ -24,5 +24,5 @@ var i = 0; repeat(8)
 }
 getRealPosition = function(_vec)
 {
-	return new Vector2(bbox_left + _vec.x * GRID_WIDTH, bbox_top + _vec.y * GRID_HEIGHT);
+	return new Vector2(bbox_left + _vec.x * DATA_VIEW.gridSize.x, bbox_top + _vec.y * DATA_VIEW.gridSize.y);
 }

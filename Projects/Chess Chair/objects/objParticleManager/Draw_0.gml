@@ -1,6 +1,7 @@
 if (!surface_exists(surPS))
 {
-	surPS = surface_create(window.width, window.height);
+	var ws = window.getSize();
+	surPS = surface_create(ws.x, ws.y);
 }
 else
 {

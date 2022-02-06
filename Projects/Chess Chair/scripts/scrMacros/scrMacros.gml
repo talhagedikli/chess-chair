@@ -28,4 +28,14 @@
 #macro c_crimson		make_color_rgb(184, 15, 10)
 #macro c_onyx			$0f0f0f
 #macro c_skyblue		$e6d8ad
+
+function __MyColors()
+{
+	static data =
+	{
+		
+	};
+	return data;
+
+}
 #endregion

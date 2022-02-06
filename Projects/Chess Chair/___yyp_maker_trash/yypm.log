@@ -1,0 +1,571 @@
+You are using YYP Maker v1.1.2, released in 11-04-2021
+
+
+
+[06-02-2022 13:00:13] Initialized GameMaker Project: Chess Chair.yyp
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/animcurves
+[06-02-2022 13:00:13] Checking acTweens
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/animcurves/acTweens
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/animcurves/acTweens
+[06-02-2022 13:00:13] Checking acTweens.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/animcurves/acTweens/acTweens.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/animcurves/acTweens/acTweens.yy
+[06-02-2022 13:00:13] Par: "folders/Assets/Animation Curves" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/animcurves/acTweens/acTweens.yy"
+[06-02-2022 13:00:13] Found AnimCurve: acTweens
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/datafiles
+[06-02-2022 13:00:13] Checking inigo quilez 2d sdf license.txt
+[06-02-2022 13:00:13] Checking AdMob Extension.pdf
+[06-02-2022 13:00:13] Checking AdMob Extension.docx
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/extensions
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/fonts
+[06-02-2022 13:00:13] Checking fntText
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/fonts/fntText
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/fonts/fntText
+[06-02-2022 13:00:13] Checking fntText.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/fonts/fntText/fntText.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/fonts/fntText/fntText.yy
+[06-02-2022 13:00:13] Par: "folders/Assets/Fonts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/fonts/fntText/fntText.yy"
+[06-02-2022 13:00:13] Found Font: fntText
+[06-02-2022 13:00:13] Checking fntText.png
+[06-02-2022 13:00:13] Checking fntText.old.yy
+[06-02-2022 13:00:13] Trash file: fntText.old.yy, will be moved to ___yyp_maker_trash
+[06-02-2022 13:00:13] Checking fntText.old.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/notes
+[06-02-2022 13:00:13] Checking ToDo
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/notes/ToDo
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/notes/ToDo
+[06-02-2022 13:00:13] Checking ToDo.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/notes/ToDo/ToDo.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/notes/ToDo/ToDo.yy
+[06-02-2022 13:00:13] Par: "folders/Notes" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/notes/ToDo/ToDo.yy"
+[06-02-2022 13:00:13] Found Note: ToDo
+[06-02-2022 13:00:13] Checking ToDo.txt
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects
+[06-02-2022 13:00:13] Checking objWater
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objWater
+[06-02-2022 13:00:13] Checking objTestTable
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objTestTable
+[06-02-2022 13:00:13] Checking objSaveManager
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objSaveManager
+[06-02-2022 13:00:13] Checking objRoomManager
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objRoomManager
+[06-02-2022 13:00:13] Checking objPrince
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objPrince
+[06-02-2022 13:00:13] Checking objPawn
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objPawn
+[06-02-2022 13:00:13] Checking objParticleManager
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objParticleManager
+[06-02-2022 13:00:13] Checking objParChessman
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objParChessman
+[06-02-2022 13:00:13] Checking objMenu
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objMenu
+[06-02-2022 13:00:13] Checking objInputManager
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objInputManager
+[06-02-2022 13:00:13] Checking objFxManager
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objFxManager
+[06-02-2022 13:00:13] Checking objChessTable
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objChessTable
+[06-02-2022 13:00:13] Checking objCamera
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objCamera
+[06-02-2022 13:00:13] Checking objBlock
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objBlock
+[06-02-2022 13:00:13] Checking objBackgroundManager
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objBackgroundManager
+[06-02-2022 13:00:13] Checking Core
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/Core
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/Core
+[06-02-2022 13:00:13] Checking Step_2.gml
+[06-02-2022 13:00:13] Checking Step_1.gml
+[06-02-2022 13:00:13] Checking Step_0.gml
+[06-02-2022 13:00:13] Checking KeyPress_82.gml
+[06-02-2022 13:00:13] Checking KeyPress_49.gml
+[06-02-2022 13:00:13] Checking KeyPress_48.gml
+[06-02-2022 13:00:13] Checking KeyPress_27.gml
+[06-02-2022 13:00:13] Checking Draw_64.gml
+[06-02-2022 13:00:13] Checking Create_0.gml
+[06-02-2022 13:00:13] Checking Core.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/Core/Core.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/Core/Core.yy
+[06-02-2022 13:00:13] Par: "folders/Objects" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/Core/Core.yy"
+[06-02-2022 13:00:13] Found Object: Core
+[06-02-2022 13:00:13] Checking CleanUp_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objBackgroundManager
+[06-02-2022 13:00:13] Checking Step_0.gml
+[06-02-2022 13:00:13] Checking RoomManager.yy
+[06-02-2022 13:00:13] Trash file: RoomManager.yy, will be moved to ___yyp_maker_trash
+[06-02-2022 13:00:13] Checking objBackgroundManager.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objBackgroundManager/objBackgroundManager.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objBackgroundManager/objBackgroundManager.yy
+[06-02-2022 13:00:13] Par: "folders/Objects/Managers" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objBackgroundManager/objBackgroundManager.yy"
+[06-02-2022 13:00:13] Found Object: objBackgroundManager
+[06-02-2022 13:00:13] Checking Create_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objBlock
+[06-02-2022 13:00:13] Checking objBlock.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objBlock/objBlock.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objBlock/objBlock.yy
+[06-02-2022 13:00:13] Par: "folders/Objects" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objBlock/objBlock.yy"
+[06-02-2022 13:00:13] Found Object: objBlock
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objCamera
+[06-02-2022 13:00:13] Checking Step_2.gml
+[06-02-2022 13:00:13] Checking objCamera.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objCamera/objCamera.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objCamera/objCamera.yy
+[06-02-2022 13:00:13] Par: "folders/Objects/Managers" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objCamera/objCamera.yy"
+[06-02-2022 13:00:13] Found Object: objCamera
+[06-02-2022 13:00:13] Checking Draw_74.gml
+[06-02-2022 13:00:13] Checking Create_0.gml
+[06-02-2022 13:00:13] Checking CleanUp_0.gml
+[06-02-2022 13:00:13] Checking Alarm_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objChessTable
+[06-02-2022 13:00:13] Checking objChessTable.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objChessTable/objChessTable.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objChessTable/objChessTable.yy
+[06-02-2022 13:00:13] Par: "folders/Objects/Chess" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objChessTable/objChessTable.yy"
+[06-02-2022 13:00:13] Found Object: objChessTable
+[06-02-2022 13:00:13] Checking Create_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objFxManager
+[06-02-2022 13:00:13] Checking objFxManager.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objFxManager/objFxManager.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objFxManager/objFxManager.yy
+[06-02-2022 13:00:13] Par: "folders/Objects/Managers" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objFxManager/objFxManager.yy"
+[06-02-2022 13:00:13] Found Object: objFxManager
+[06-02-2022 13:00:13] Checking Create_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objInputManager
+[06-02-2022 13:00:13] Checking Step_1.gml
+[06-02-2022 13:00:13] Checking objInputManager.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objInputManager/objInputManager.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objInputManager/objInputManager.yy
+[06-02-2022 13:00:13] Par: "folders/Objects/Managers" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objInputManager/objInputManager.yy"
+[06-02-2022 13:00:13] Found Object: objInputManager
+[06-02-2022 13:00:13] Checking Create_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objMenu
+[06-02-2022 13:00:13] Checking objMenu.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objMenu/objMenu.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objMenu/objMenu.yy
+[06-02-2022 13:00:13] Par: "folders/Objects" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objMenu/objMenu.yy"
+[06-02-2022 13:00:13] Found Object: objMenu
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objParChessman
+[06-02-2022 13:00:13] Checking Step_0.gml
+[06-02-2022 13:00:13] Checking objParChessman.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objParChessman/objParChessman.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objParChessman/objParChessman.yy
+[06-02-2022 13:00:13] Par: "folders/Objects/Chess" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objParChessman/objParChessman.yy"
+[06-02-2022 13:00:13] Found Object: objParChessman
+[06-02-2022 13:00:13] Checking Draw_0.gml
+[06-02-2022 13:00:13] Checking Create_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objParticleManager
+[06-02-2022 13:00:13] Checking objParticleManager.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objParticleManager/objParticleManager.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objParticleManager/objParticleManager.yy
+[06-02-2022 13:00:13] Par: "folders/Objects/Managers" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objParticleManager/objParticleManager.yy"
+[06-02-2022 13:00:13] Found Object: objParticleManager
+[06-02-2022 13:00:13] Checking Draw_0.gml
+[06-02-2022 13:00:13] Checking Create_0.gml
+[06-02-2022 13:00:13] Checking CleanUp_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objPawn
+[06-02-2022 13:00:13] Checking Step_0.gml
+[06-02-2022 13:00:13] Checking objPawn.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objPawn/objPawn.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objPawn/objPawn.yy
+[06-02-2022 13:00:13] Par: "folders/Objects/Chess" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objPawn/objPawn.yy"
+[06-02-2022 13:00:13] Found Object: objPawn
+[06-02-2022 13:00:13] Checking Draw_0.gml
+[06-02-2022 13:00:13] Checking Create_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objPrince
+[06-02-2022 13:00:13] Checking Step_0.gml
+[06-02-2022 13:00:13] Checking objPrince.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objPrince/objPrince.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objPrince/objPrince.yy
+[06-02-2022 13:00:13] Par: "folders/Objects" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objPrince/objPrince.yy"
+[06-02-2022 13:00:13] Found Object: objPrince
+[06-02-2022 13:00:13] Checking Create_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objRoomManager
+[06-02-2022 13:00:13] Checking Step_0.gml
+[06-02-2022 13:00:13] Checking objRoomManager.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objRoomManager/objRoomManager.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objRoomManager/objRoomManager.yy
+[06-02-2022 13:00:13] Par: "folders/Objects/Managers" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objRoomManager/objRoomManager.yy"
+[06-02-2022 13:00:13] Found Object: objRoomManager
+[06-02-2022 13:00:13] Checking Create_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objSaveManager
+[06-02-2022 13:00:13] Checking objSaveManager.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objSaveManager/objSaveManager.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objSaveManager/objSaveManager.yy
+[06-02-2022 13:00:13] Par: "folders/Objects/Managers" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objSaveManager/objSaveManager.yy"
+[06-02-2022 13:00:13] Found Object: objSaveManager
+[06-02-2022 13:00:13] Checking Create_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objTestTable
+[06-02-2022 13:00:13] Checking Step_0.gml
+[06-02-2022 13:00:13] Checking objTestTable.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objTestTable/objTestTable.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objTestTable/objTestTable.yy
+[06-02-2022 13:00:13] Par: "folders/Objects/Chess" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objTestTable/objTestTable.yy"
+[06-02-2022 13:00:13] Found Object: objTestTable
+[06-02-2022 13:00:13] Checking Create_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objWater
+[06-02-2022 13:00:13] Checking objWater.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objWater/objWater.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objWater/objWater.yy
+[06-02-2022 13:00:13] Par: "folders/Objects" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/objects/objWater/objWater.yy"
+[06-02-2022 13:00:13] Found Object: objWater
+[06-02-2022 13:00:13] Checking Draw_0.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options
+[06-02-2022 13:00:13] Checking windows
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/windows
+[06-02-2022 13:00:13] Checking operagx
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/operagx
+[06-02-2022 13:00:13] Checking main
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/main
+[06-02-2022 13:00:13] Checking mac
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/mac
+[06-02-2022 13:00:13] Checking linux
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/linux
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/linux
+[06-02-2022 13:00:13] Checking options_linux.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/linux/options_linux.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/linux/options_linux.yy
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/mac
+[06-02-2022 13:00:13] Checking options_mac.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/mac/options_mac.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/mac/options_mac.yy
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/main
+[06-02-2022 13:00:13] Checking options_main.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/main/options_main.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/main/options_main.yy
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/operagx
+[06-02-2022 13:00:13] Checking options_operagx.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/operagx/options_operagx.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/operagx/options_operagx.yy
+[06-02-2022 13:00:13] Invalid file: options_operagx.yy, will be moved to ___yyp_maker_trash
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/windows
+[06-02-2022 13:00:13] Checking options_windows.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/windows/options_windows.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/options/windows/options_windows.yy
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/paths
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/rooms
+[06-02-2022 13:00:13] Checking rZero
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/rooms/rZero
+[06-02-2022 13:00:13] Checking rOne
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/rooms/rOne
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/rooms/rOne
+[06-02-2022 13:00:13] Checking rOne.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/rooms/rOne/rOne.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/rooms/rOne/rOne.yy
+[06-02-2022 13:00:13] Par: "folders/Rooms" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/rooms/rOne/rOne.yy"
+[06-02-2022 13:00:13] Found Room: rOne
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/rooms/rZero
+[06-02-2022 13:00:13] Checking rZero.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/rooms/rZero/rZero.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/rooms/rZero/rZero.yy
+[06-02-2022 13:00:13] Par: "folders/Rooms" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/rooms/rZero/rZero.yy"
+[06-02-2022 13:00:13] Found Room: rZero
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts
+[06-02-2022 13:00:13] Checking __snowstate_config
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/__snowstate_config
+[06-02-2022 13:00:13] Checking SnowState
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/SnowState
+[06-02-2022 13:00:13] Checking scrTypewriter
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrTypewriter
+[06-02-2022 13:00:13] Checking scrTrash
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrTrash
+[06-02-2022 13:00:13] Checking scrParticle
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrParticle
+[06-02-2022 13:00:13] Checking scrPack
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrPack
+[06-02-2022 13:00:13] Checking scrMacros
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrMacros
+[06-02-2022 13:00:13] Checking scrGlobalFunctions
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrGlobalFunctions
+[06-02-2022 13:00:13] Checking scrData
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrData
+[06-02-2022 13:00:13] Checking scrCollisions
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrCollisions
+[06-02-2022 13:00:13] Checking scrCamera
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrCamera
+[06-02-2022 13:00:13] Checking scr22
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scr22
+[06-02-2022 13:00:13] Checking libVector
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libVector
+[06-02-2022 13:00:13] Checking libTween
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libTween
+[06-02-2022 13:00:13] Checking libTimer
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libTimer
+[06-02-2022 13:00:13] Checking libSState
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libSState
+[06-02-2022 13:00:13] Checking libSaveLoad
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libSaveLoad
+[06-02-2022 13:00:13] Checking libHyena
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libHyena
+[06-02-2022 13:00:13] Checking libCore
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libCore
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libCore
+[06-02-2022 13:00:13] Checking libCore.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libCore/libCore.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libCore/libCore.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libCore/libCore.yy"
+[06-02-2022 13:00:13] Found Script: libCore
+[06-02-2022 13:00:13] Checking libCore.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libHyena
+[06-02-2022 13:00:13] Checking libHyena.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libHyena/libHyena.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libHyena/libHyena.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libHyena/libHyena.yy"
+[06-02-2022 13:00:13] Found Script: libHyena
+[06-02-2022 13:00:13] Checking libHyena.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libSaveLoad
+[06-02-2022 13:00:13] Checking libSaveLoad.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libSaveLoad/libSaveLoad.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libSaveLoad/libSaveLoad.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libSaveLoad/libSaveLoad.yy"
+[06-02-2022 13:00:13] Found Script: libSaveLoad
+[06-02-2022 13:00:13] Checking libSaveLoad.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libSState
+[06-02-2022 13:00:13] Checking libSState.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libSState/libSState.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libSState/libSState.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libSState/libSState.yy"
+[06-02-2022 13:00:13] Found Script: libSState
+[06-02-2022 13:00:13] Checking libSState.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libTimer
+[06-02-2022 13:00:13] Checking libTimer.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libTimer/libTimer.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libTimer/libTimer.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libTimer/libTimer.yy"
+[06-02-2022 13:00:13] Found Script: libTimer
+[06-02-2022 13:00:13] Checking libTimer.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libTween
+[06-02-2022 13:00:13] Checking Script22.yy
+[06-02-2022 13:00:13] Trash file: Script22.yy, will be moved to ___yyp_maker_trash
+[06-02-2022 13:00:13] Checking libTween.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libTween/libTween.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libTween/libTween.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libTween/libTween.yy"
+[06-02-2022 13:00:13] Found Script: libTween
+[06-02-2022 13:00:13] Checking libTween.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libVector
+[06-02-2022 13:00:13] Checking UsefulFunctions.yy
+[06-02-2022 13:00:13] Trash file: UsefulFunctions.yy, will be moved to ___yyp_maker_trash
+[06-02-2022 13:00:13] Checking libVector.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libVector/libVector.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libVector/libVector.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/libVector/libVector.yy"
+[06-02-2022 13:00:13] Found Script: libVector
+[06-02-2022 13:00:13] Checking libVector.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scr22
+[06-02-2022 13:00:13] Checking scr22.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scr22/scr22.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scr22/scr22.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scr22/scr22.yy"
+[06-02-2022 13:00:13] Found Script: scr22
+[06-02-2022 13:00:13] Checking scr22.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrCamera
+[06-02-2022 13:00:13] Checking scrCamera.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrCamera/scrCamera.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrCamera/scrCamera.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrCamera/scrCamera.yy"
+[06-02-2022 13:00:13] Found Script: scrCamera
+[06-02-2022 13:00:13] Checking scrCamera.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrCollisions
+[06-02-2022 13:00:13] Checking scrCollisions.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrCollisions/scrCollisions.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrCollisions/scrCollisions.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrCollisions/scrCollisions.yy"
+[06-02-2022 13:00:13] Found Script: scrCollisions
+[06-02-2022 13:00:13] Checking scrCollisions.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrData
+[06-02-2022 13:00:13] Checking scrData.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrData/scrData.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrData/scrData.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrData/scrData.yy"
+[06-02-2022 13:00:13] Found Script: scrData
+[06-02-2022 13:00:13] Checking scrData.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrGlobalFunctions
+[06-02-2022 13:00:13] Checking scrGlobalFunctions.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrGlobalFunctions/scrGlobalFunctions.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrGlobalFunctions/scrGlobalFunctions.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrGlobalFunctions/scrGlobalFunctions.yy"
+[06-02-2022 13:00:13] Found Script: scrGlobalFunctions
+[06-02-2022 13:00:13] Checking scrGlobalFunctions.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrMacros
+[06-02-2022 13:00:13] Checking scrMacros.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrMacros/scrMacros.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrMacros/scrMacros.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrMacros/scrMacros.yy"
+[06-02-2022 13:00:13] Found Script: scrMacros
+[06-02-2022 13:00:13] Checking scrMacros.gml
+[06-02-2022 13:00:13] Checking constants.remote.yy
+[06-02-2022 13:00:13] Trash file: constants.remote.yy, will be moved to ___yyp_maker_trash
+[06-02-2022 13:00:13] Checking constants.local.yy
+[06-02-2022 13:00:13] Trash file: constants.local.yy, will be moved to ___yyp_maker_trash
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrPack
+[06-02-2022 13:00:13] Checking scrPack.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrPack/scrPack.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrPack/scrPack.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrPack/scrPack.yy"
+[06-02-2022 13:00:13] Found Script: scrPack
+[06-02-2022 13:00:13] Checking scrPack.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrParticle
+[06-02-2022 13:00:13] Checking scrParticle.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrParticle/scrParticle.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrParticle/scrParticle.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrParticle/scrParticle.yy"
+[06-02-2022 13:00:13] Found Script: scrParticle
+[06-02-2022 13:00:13] Checking scrParticle.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrTrash
+[06-02-2022 13:00:13] Checking scrTrash.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrTrash/scrTrash.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrTrash/scrTrash.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrTrash/scrTrash.yy"
+[06-02-2022 13:00:13] Found Script: scrTrash
+[06-02-2022 13:00:13] Checking scrTrash.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrTypewriter
+[06-02-2022 13:00:13] Checking scrTypewriter.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrTypewriter/scrTypewriter.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrTypewriter/scrTypewriter.yy
+[06-02-2022 13:00:13] Par: "folders/Scripts" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/scrTypewriter/scrTypewriter.yy"
+[06-02-2022 13:00:13] Found Script: scrTypewriter
+[06-02-2022 13:00:13] Checking scrTypewriter.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/SnowState
+[06-02-2022 13:00:13] Checking SnowState.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/SnowState/SnowState.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/SnowState/SnowState.yy
+[06-02-2022 13:00:13] Par: "folders/Extensions/SnowState" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/SnowState/SnowState.yy"
+[06-02-2022 13:00:13] Found Script: SnowState
+[06-02-2022 13:00:13] Checking SnowState.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/__snowstate_config
+[06-02-2022 13:00:13] Checking __snowstate_config.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/__snowstate_config/__snowstate_config.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/__snowstate_config/__snowstate_config.yy
+[06-02-2022 13:00:13] Par: "folders/Extensions/SnowState" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/scripts/__snowstate_config/__snowstate_config.yy"
+[06-02-2022 13:00:13] Found Script: __snowstate_config
+[06-02-2022 13:00:13] Checking __snowstate_config.gml
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sequences
+[06-02-2022 13:00:13] Checking Sequence1
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sequences/Sequence1
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sequences/Sequence1
+[06-02-2022 13:00:13] Checking Sequence1.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sequences/Sequence1/Sequence1.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sequences/Sequence1/Sequence1.yy
+[06-02-2022 13:00:13] Par: "folders/Assets/Sequences" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sequences/Sequence1/Sequence1.yy"
+[06-02-2022 13:00:13] Found Sequence: Sequence1
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/shaders
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sounds
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites
+[06-02-2022 13:00:13] Checking sprWhiteBlock
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWhiteBlock
+[06-02-2022 13:00:13] Checking sprWater
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWater
+[06-02-2022 13:00:13] Checking sprTestTable
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprTestTable
+[06-02-2022 13:00:13] Checking sprSquareBg
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprSquareBg
+[06-02-2022 13:00:13] Checking sprPrince
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPrince
+[06-02-2022 13:00:13] Checking sprPawn
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPawn
+[06-02-2022 13:00:13] Checking sprBlock
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprBlock
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprBlock
+[06-02-2022 13:00:13] Checking sprBlock.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprBlock/sprBlock.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprBlock/sprBlock.yy
+[06-02-2022 13:00:13] Par: "folders/Sprites" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprBlock/sprBlock.yy"
+[06-02-2022 13:00:13] Found Sprite: sprBlock
+[06-02-2022 13:00:13] Checking layers
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprBlock/layers
+[06-02-2022 13:00:13] Checking 04322dac-551a-4270-a50b-534619c0eda6.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprBlock/layers
+[06-02-2022 13:00:13] Checking 04322dac-551a-4270-a50b-534619c0eda6
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprBlock/layers/04322dac-551a-4270-a50b-534619c0eda6
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprBlock/layers/04322dac-551a-4270-a50b-534619c0eda6
+[06-02-2022 13:00:13] Checking 6bc378b0-28a2-44ad-bf0a-8ced7e856166.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPawn
+[06-02-2022 13:00:13] Checking sprPawn.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPawn/sprPawn.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPawn/sprPawn.yy
+[06-02-2022 13:00:13] Par: "folders/Sprites" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPawn/sprPawn.yy"
+[06-02-2022 13:00:13] Found Sprite: sprPawn
+[06-02-2022 13:00:13] Checking layers
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPawn/layers
+[06-02-2022 13:00:13] Checking cb2fa74f-f2ff-4773-a3f8-7a6c98e6c1cc.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPawn/layers
+[06-02-2022 13:00:13] Checking cb2fa74f-f2ff-4773-a3f8-7a6c98e6c1cc
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPawn/layers/cb2fa74f-f2ff-4773-a3f8-7a6c98e6c1cc
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPawn/layers/cb2fa74f-f2ff-4773-a3f8-7a6c98e6c1cc
+[06-02-2022 13:00:13] Checking 855070b5-0db9-425f-99e4-81aaa7dc8bf4.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPrince
+[06-02-2022 13:00:13] Checking sprPrince.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPrince/sprPrince.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPrince/sprPrince.yy
+[06-02-2022 13:00:13] Par: "folders/Sprites" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPrince/sprPrince.yy"
+[06-02-2022 13:00:13] Found Sprite: sprPrince
+[06-02-2022 13:00:13] Checking layers
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPrince/layers
+[06-02-2022 13:00:13] Checking a3406dd3-21ba-4b2a-a08a-9f164470715f.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPrince/layers
+[06-02-2022 13:00:13] Checking a3406dd3-21ba-4b2a-a08a-9f164470715f
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPrince/layers/a3406dd3-21ba-4b2a-a08a-9f164470715f
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprPrince/layers/a3406dd3-21ba-4b2a-a08a-9f164470715f
+[06-02-2022 13:00:13] Checking 182d58c7-bf20-485e-8f06-5ff2d8c06e7c.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprSquareBg
+[06-02-2022 13:00:13] Checking sprSquareBg.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprSquareBg/sprSquareBg.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprSquareBg/sprSquareBg.yy
+[06-02-2022 13:00:13] Par: "folders/Sprites" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprSquareBg/sprSquareBg.yy"
+[06-02-2022 13:00:13] Found Sprite: sprSquareBg
+[06-02-2022 13:00:13] Checking layers
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprSquareBg/layers
+[06-02-2022 13:00:13] Checking d3a8f6fb-1b28-42fc-84c1-e67ab38abae0.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprSquareBg/layers
+[06-02-2022 13:00:13] Checking d3a8f6fb-1b28-42fc-84c1-e67ab38abae0
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprSquareBg/layers/d3a8f6fb-1b28-42fc-84c1-e67ab38abae0
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprSquareBg/layers/d3a8f6fb-1b28-42fc-84c1-e67ab38abae0
+[06-02-2022 13:00:13] Checking ef03c2fd-d61a-4d7c-9dee-fe0dd94ada6f.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprTestTable
+[06-02-2022 13:00:13] Checking sprTestTable.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprTestTable/sprTestTable.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprTestTable/sprTestTable.yy
+[06-02-2022 13:00:13] Par: "folders/Sprites" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprTestTable/sprTestTable.yy"
+[06-02-2022 13:00:13] Found Sprite: sprTestTable
+[06-02-2022 13:00:13] Checking layers
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprTestTable/layers
+[06-02-2022 13:00:13] Checking 24f43561-f420-430e-a06c-170a91cfd301.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprTestTable/layers
+[06-02-2022 13:00:13] Checking 24f43561-f420-430e-a06c-170a91cfd301
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprTestTable/layers/24f43561-f420-430e-a06c-170a91cfd301
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprTestTable/layers/24f43561-f420-430e-a06c-170a91cfd301
+[06-02-2022 13:00:13] Checking 556f0ed7-87fe-485b-818b-e958e161e8c5.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWater
+[06-02-2022 13:00:13] Checking sprWater.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWater/sprWater.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWater/sprWater.yy
+[06-02-2022 13:00:13] Par: "folders/Sprites" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWater/sprWater.yy"
+[06-02-2022 13:00:13] Found Sprite: sprWater
+[06-02-2022 13:00:13] Checking layers
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWater/layers
+[06-02-2022 13:00:13] Checking 74210f76-98b3-4c12-9eef-b885aea0f8e4.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWater/layers
+[06-02-2022 13:00:13] Checking 74210f76-98b3-4c12-9eef-b885aea0f8e4
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWater/layers/74210f76-98b3-4c12-9eef-b885aea0f8e4
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWater/layers/74210f76-98b3-4c12-9eef-b885aea0f8e4
+[06-02-2022 13:00:13] Checking 4b64f3c1-b3e2-48c3-a215-6f840529f15c.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWhiteBlock
+[06-02-2022 13:00:13] Checking sprWhiteBlock.yy
+[06-02-2022 13:00:13] Parsing C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWhiteBlock/sprWhiteBlock.yy
+[06-02-2022 13:00:13] Reading C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWhiteBlock/sprWhiteBlock.yy
+[06-02-2022 13:00:13] Par: "folders/Sprites" at dir: "C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWhiteBlock/sprWhiteBlock.yy"
+[06-02-2022 13:00:13] Found Sprite: sprWhiteBlock
+[06-02-2022 13:00:13] Checking layers
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWhiteBlock/layers
+[06-02-2022 13:00:13] Checking 56dac5b7-e7de-4289-bd55-2c04c286d0e1.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWhiteBlock/layers
+[06-02-2022 13:00:13] Checking 56dac5b7-e7de-4289-bd55-2c04c286d0e1
+[06-02-2022 13:00:13] Directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWhiteBlock/layers/56dac5b7-e7de-4289-bd55-2c04c286d0e1
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/sprites/sprWhiteBlock/layers/56dac5b7-e7de-4289-bd55-2c04c286d0e1
+[06-02-2022 13:00:13] Checking c5cf3511-9566-4a44-94fe-b53b99a34055.png
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/tilesets
+[06-02-2022 13:00:13] Current parent directory: C:/Users/talha/Documents/GitHub/Gamemaker-Source-Control/Projects/Chess Chair/timelines
+[06-02-2022 13:00:13] Moving files to trash...
+[06-02-2022 13:00:13] Files yeeted successfully!
+[06-02-2022 13:00:13] Generating YYP...
+[06-02-2022 13:00:13] Chess Chair.yyp created successfully!
