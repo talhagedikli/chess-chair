@@ -40,7 +40,6 @@ moveState = new State("move");
 dashState = new State("dash");
 
 Core.cm.Follow(self.id);
-
 // Move State
 moveState.enter = function() {
 
@@ -53,7 +52,7 @@ moveState.step = function()
     {
         motion.x = approach(motion.x, maxSpeedGround.x, accel.x);
     }
-    else if ( in .keyLeft)
+    else if ( in.keyLeft)
     {
         motion.x = approach(motion.x, -maxSpeedGround.x, accel.x);
     }
@@ -61,7 +60,7 @@ moveState.step = function()
     {
         motion.x = approach(motion.x, 0, decel.x);
     }
-
+	
     //Coyote time
     if (onGround == false)
     {
@@ -99,7 +98,7 @@ moveState.step = function()
     }
 
     //double jump section
-    if (jumps > 0 and in .keyJumpPressed and doubleJump)
+    if (jumps > 0 and in.keyJumpPressed and doubleJump)
     {
         //reduce jumps variable by 1 every step
         jumps -= 1;
@@ -119,7 +118,6 @@ moveState.step = function()
             motion.y *= 0.7;
         }
     }
-
     // Landed
     if (onGround == true)
     {
@@ -132,7 +130,6 @@ moveState.step = function()
     {
         landed = false;
     }
-
     // Apply gravity
     applyGravity(gSpeed);
     if (checkInWater())
@@ -150,7 +147,6 @@ moveState.leave = function() {
 // Dive State
 diveState.enter = function()
 {
-    log("hey there, i am diving");
     motion.x = motion.x * 0.5;
     motion.y = motion.y * 0.5;
     layer_set_fx("Player", self.waterFx);
@@ -287,3 +283,18 @@ function applyGravity(_grav)
     }
 }
 #endregion
+
+
+
+
+
+
+
+
+
+
+
+a = new Timer(60, true);
+a.start();
+
+

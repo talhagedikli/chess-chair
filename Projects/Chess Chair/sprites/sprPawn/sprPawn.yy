@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprPawn","path":"sprites/sprPawn/sprPawn.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprPawn",
     "tags": [],
     "resourceType": "GMSequence",
@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "path": "folders/Assets/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprPawn",

@@ -1,23 +1,20 @@
-#macro TIMERS global.__timers
-global.__timers = [];
-
-function run_all_timers()
-{
-	var _l = array_length(TIMERS);
-	for (var i = 0; i < _l; ++i) 
-	{
-		TIMERS[i].Run();
-	}	
-}
-/// Feather disable GM1013 - from ERRORS to WARNINGS
-
-
+//#macro TIMERS global.__timers
+//global.__timers = [];
+//function run_all_timers()
+//{
+//	var _l = array_length(TIMERS);
+//	for (var i = 0; i < _l; ++i) 
+//	{
+//		TIMERS[i].run();
+//	}	
+//}
 
 /// @description Basic alarms with structs 
 /// @param {real} _duration Duration
 /// @param {bool} [_loop=false] description
-/// @param {bool} [_autostart=false] description
-function Timer(_duration, _loop=false, _autostart = false) constructor
+/// @param {bool} [_autostart=false] Whether you want timer to start automaticly or not
+/// @param {bool} [_autostart=true] Whether you wish to run timer automaticly (in core object) or not
+function Timer(_duration, _loop=false, _autostart=false, _autorun=true) : Lwo() constructor
 {
 	timeLeft	= 0.;
 	duration	= _duration;
@@ -26,55 +23,74 @@ function Timer(_duration, _loop=false, _autostart = false) constructor
 	active		= _autostart;
 	loop		= _loop;
 	done		= false;
-	array_push(TIMERS, self);
+	timeLeft	= duration - time;
 	
-	static Start = function()
+
+	__step_end__ = function()
+	{
+		run();
+	}
+	//if (_autorun) array_push(TIMERS, self)
+	static start = function()
 	{
 		//duration	= _duration;
 		//loop		= _loop;
-		timeLeft	= duration - time;
+		//timeLeft	= duration - time;
 		done		= false;
 		active		= true;
 		return self;
 	}
-	static Run = function()
+	static run = method(self, function()
 	{
 		if (active)
 		{
-			time		+= 1.;
+			time		+= 1;
 			timeLeft	= duration - time;
-			if (time >= duration)
+			//if (time >= duration)
+			//{
+			//	done	= true;
+			//	active	= false;
+			//}
+			
+			if (done)
 			{
-				done	= true;
-				active	= false;
+				if (loop) reset();
+				else stop();
+			}			
+			else if (time >= duration)
+			{
+				done = true;	
 			}
+			
+
 		}
 		return self;
-	}
-	///@param {real} _duration
-	static SetDuration = function(_duration)
+	})
+	/// @param {real} _duration
+	
+	static setDuration = function(_duration = duration)
 	{
 		duration	= _duration;
 		return self;
 	}
-	///@param {bool} _loop
-	static SetLoop = function(_loop = bool(loop))
+	/// @param {bool} _loop
+	static setLoop = function(_loop = loop)
 	{
 		loop = _loop;
 		return self;
 	}
-	///@param {function} _func 
-	static OnTimeout = function(_func)
+	/// @param {function} _func 
+	static onTimeout = function(_func)
 	{
 		if (done)
 		{
 			_func();
-			if (loop) Reset();
-			else Stop();
+			//if (loop) reset();
+			//else stop();
 		}
 		return self;
 	}
-	static Reset = function()
+	static reset = function()
 	{
 		time		= 0;
 		//duration	= _duration;
@@ -83,7 +99,7 @@ function Timer(_duration, _loop=false, _autostart = false) constructor
 		return self;
 
 	}
-	static Stop = function()
+	static stop = function()
 	{
 		time	= 0;
 		active	= false;
@@ -91,30 +107,29 @@ function Timer(_duration, _loop=false, _autostart = false) constructor
 		return self;
 	}
 	/// @param {bool} _active Set active
-	static SetActive = function(_active)
+	static setActive = method(self, function(_active)
 	{
 		active = _active;
 		return self;
-	}
-	static IsActive = function()
+	})
+	static isActive = function()
 	{
 		return active;
 	}
-	static GetTime = function()
+	static getTime = function()
 	{
 		return time;
 	}
 	/// @param {real} _time Time to seek
-	static SeekTime = function(_time)
+	static seekTime = function(_time)
 	{
 		return time == _time ? true : false;
 	}
-	static GetTimeLeft = function()
+	static getTimeLeft = function()
 	{
 		return timeLeft
 	}
 }
-
 
 
 

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprWater","path":"sprites/sprWater/sprWater.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprWater",
     "tags": [],
     "resourceType": "GMSequence",
@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "path": "folders/Assets/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprWater",

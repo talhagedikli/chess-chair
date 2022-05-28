@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSquareBg","path":"sprites/sprSquareBg/sprSquareBg.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSquareBg",
     "tags": [],
     "resourceType": "GMSequence",
@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "path": "folders/Assets/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprSquareBg",

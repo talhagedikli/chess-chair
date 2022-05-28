@@ -5,7 +5,7 @@
 global.__stateMachines		= {};
 
 /// @description
-/// @param {bool} _autorun
+/// @param {bool} [_autorun]
 /// @returns {nil} 
 function StateMachine(_autorun=false) constructor
 {
@@ -17,15 +17,7 @@ function StateMachine(_autorun=false) constructor
 	history					= [];
 	STATE_MACHINES[$ name]	= self;
 	
-	static Run = function()
-	{
-		if (instance_exists(owner))
-		{
-			with (owner)
-			{
-			}
-		}
-	}
+
 
 	/// @param {struct.State} _state
 	static Add = function(_state)
@@ -34,8 +26,7 @@ function StateMachine(_autorun=false) constructor
 	}
 	
 	///@param {string}		_name
-	///@param {function}	_func
-	static Init = function(_name, _func)
+	static Init = function(_name)
 	{
 		activeState = variable_struct_get(states, _name);
 		activeState.enter();

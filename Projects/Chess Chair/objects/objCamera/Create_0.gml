@@ -58,16 +58,16 @@ fsm.Init("normal");
 #endregion
 
 #region METHODS
-function ApplyScreenShake() 
+ApplyScreenShake = function()
 {
-	if (self.shake)
+	if (shake)
 	{
 		//reduce shake time by 1(every step)
-		other.shakeTime -= 1;
+		shakeTime -= 1;
 			
 		//calculate shake magnitude
-		var _xval = random_range(-self.shakeMagnitude, self.shakeMagnitude); 
-		var _yval = random_range(-self.shakeMagnitude, self.shakeMagnitude);
+		var _xval = random_range(-shakeMagnitude, shakeMagnitude); 
+		var _yval = random_range(-shakeMagnitude, shakeMagnitude);
 			
 		//apply the shake
 		x += _xval;
@@ -76,7 +76,7 @@ function ApplyScreenShake()
 		if (self.shakeTime <= 0) 
 		{
 			//if shake time is zero, shake fade
-			other.shakeMagnitude -= other.shakeFade; 
+			shakeMagnitude -= shakeFade; 
 
 			if (shakeMagnitude <= 0) 
 			{

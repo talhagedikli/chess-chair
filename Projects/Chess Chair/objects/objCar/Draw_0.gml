@@ -1,0 +1,1 @@
+draw_sprite_stacked(sprite_index, x, y, 1, 1, image_angle);
